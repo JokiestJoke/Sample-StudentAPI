@@ -1,6 +1,6 @@
 # Sample-StudentAPI
 
-This is a simple Stundent API built using Node.js Express, React & MySQL.
+This is a simple Student API built using Node.js Express, React & MySQL.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -28,7 +28,7 @@ If you haven't installed Node.js and npm, follow these steps:
 
 **OR**
 
-Alternatively, intall multiple Node.js using NVM [NodeWithNVM](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/)
+Alternatively, install multiple Node.js using NVM [NodeWithNVM](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/)
 
 To verify the installation, open your terminal and run:
 
@@ -44,11 +44,11 @@ npm -v
 3. After installation, start the MySQL server.
 4. Create a database (schema) for the application and make a note of the credentials. You'll need them to set up the backend connection.
 
-*Note: It's recommended to use a client tool like [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) for easier database management.*
+*Note: It's recommended to use a client tool like MySQL Workbench for easier database management.*
 
 **OR**
 
-For more information follow [this]https://www.w3schools.com/mysql/mysql_install_windows.asp) to install MySQL.
+For more information follow [this](https://www.w3schools.com/mysql/mysql_install_windows.asp) to install MySQL.
 
 ## Setting up the Project
 
@@ -64,14 +64,14 @@ git clone https://github.com/MarkNisarg/Sample-StudentAPI.git
 cd Sample-StudentAPI
 ```
 
-3. Install the required dependencies for client:
+3. Install the required dependencies for the client:
 
 ```bash
 cd client
 npm install
 ```
 
-4. Install the required dependencies for server:
+4. Install the required dependencies for the server:
 
 ```bash
 cd server
@@ -109,13 +109,13 @@ Your server (Node Application) should now be running on `http://localhost:3001`.
 
 - **Add Student:** Allows users to add new students to the database.
 
-  Access this feature by navigating to the "http://localhost:3000/add-student" route on the frontend.
+  Access this feature by navigating to the "http://localhost:3000/add-student" route on the front-end.
 
 - **View Students:** Displays a list of all students stored in the database.
 
   Access this feature from the home route ("/") or by navigating to the "/view-students" route.  
   Access this feature from the route ("http://localhost:3001/api/students").  
-  If you want to get single student data use route ("http://localhost:3001/api/students/:userName")
+  If you want to get single student data use the route ("http://localhost:3001/api/students/:userName")
 
 - **Delete Student:** Users can remove a student's record based on their username.
 
