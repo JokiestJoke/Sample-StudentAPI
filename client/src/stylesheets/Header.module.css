@@ -1,0 +1,91 @@
+/* Main navgation styling: */
+.side-nav a {
+  position: fixed;
+  left: -120px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 170px;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--color-white);
+  border-radius: 0 5px 5px 0;
+  z-index: 2;
+  box-shadow: 1px 1px 2px 0 rgba(0,0,0,.3);
+}
+
+.side-nav a.active {
+  left: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  #sideNav.side-nav a {
+    padding: 13px;
+    top: auto;
+    bottom: -60px;
+    transform: rotate(270deg);
+  }
+
+  #sideNav.side-nav a:not(.active) {
+    opacity: 0.4;
+  }
+}
+
+.side-nav a:hover {
+  left: 0;
+}
+
+.side-nav #login {
+  top: 160px;
+  background-color: var(--color-nav-login);
+}
+
+.side-nav #addFilm {
+  top: 230px;
+  background-color: var(--color-nav-add);
+}
+
+.side-nav #updateFilm {
+  top: 300px;
+  background-color: var(--color-nav-update);
+}
+
+.side-nav #viewFilm {
+  top: 370px;
+  background-color: var(--color-nav-view)
+}
+
+@media only screen and (max-width: 992px) {
+  #sideNav.side-nav a:hover {
+    bottom: 57px;
+  }
+
+  .side-nav #login {
+    left: calc(20vw - 90px);
+  }
+
+  .side-nav #addFilm {
+    left: calc(40vw - 90px);
+  }
+
+  .side-nav #updateFilm {
+    left: calc(60vw - 90px);
+  }
+
+  .side-nav #viewFilm {
+    left: calc(80vw - 90px);
+  }
+}
+
+.side-nav a i {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  font-size: 24px;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 992px) {
+  .side-nav a i {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
