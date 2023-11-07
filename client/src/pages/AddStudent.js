@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { userAPI } from '../userAPI';
 
 function AddStudent() {
   const [student, setStudent] = useState({
@@ -45,7 +46,7 @@ function AddStudent() {
   return (
     <div style={styles.container}>
       <h2>Add New Student</h2>
-      <form onSubmit={handleSubmit} style={styles.form}>
+      <form onSubmit={userAPI.createUser} style={styles.form}>
         <div style={styles.inputGroup}>
           <label htmlFor="userName">Username:</label>
           <input type="text" id="userName" name="userName" value={student.userName} onChange={handleChange} required />
@@ -60,6 +61,13 @@ function AddStudent() {
         </div>
         <button type="submit" style={styles.submitButton}>Add Student</button>
       </form>
+      
+      {/* <div>
+        <form onSubmit={userAPI.createUser} style={styles.form}>
+          <button type="submit" style={styles.submitButton}>API Add User Test</button>
+        </form>
+      </div> */}
+
     </div>
   );
 }
